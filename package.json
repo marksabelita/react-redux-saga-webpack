@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require @babel/register --recursive ./test || exit 0",
     "dev": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback",
     "build": "webpack --mode production --config config/webpack.prod.config.js --env.NODE_ENV=production --progress"
   },
@@ -16,7 +16,11 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-2": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.4",
+    "chai": "^4.2.0",
+    "chai-jquery": "^2.0.0",
     "css-loader": "^1.0.0",
     "eslint": "^5.6.1",
     "eslint-config-airbnb": "^17.1.0",
@@ -24,14 +28,15 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "mocha": "^5.2.0",
     "node-sass": "^4.9.3",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "prettier": "^1.14.3",
+    "react-dom": "^16.5.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "uglifyjs-webpack-plugin": "^2.0.1",
@@ -43,13 +48,14 @@
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "history": "^4.7.2",
+    "jsdom": "^12.1.0",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-router-redux": "^5.0.0-alpha.9",
     "redux": "^4.0.0",
     "redux-devtools-extension": "^2.13.5",
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "save-dev": "^2.0.0"
   }
 }

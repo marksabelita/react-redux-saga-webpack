@@ -2,7 +2,7 @@ import React from 'react';
 
 const App = () => {
   return (
-    <div> Home route </div>
+    <div className="home"> Home route </div>
   );
 };
 
