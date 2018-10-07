@@ -6,7 +6,7 @@ import { ConnectedRouter } from "react-router-redux";
 import createHistory from "history/createBrowserHistory";
 import store from './store';
 
-import Test from './components/test';
+import News from './components/news';
 import App from './components/app';
 
 const history = createHistory();
@@ -16,7 +16,7 @@ ReactDOM.render(
     <ConnectedRouter history={history}>
       <div>
         <Route exact path="/" component={App} />
-        <Route exact path="/test" component={Test} />
+        <Route exact path="/test" component={News} />
       </div>
     </ConnectedRouter>
   </Provider>, document.getElementById('app')
