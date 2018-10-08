@@ -23,3 +23,7 @@ This boilerplate features all the latest tools and practices in the industry.
 - Run yarn or npm install to install dependencies.
 - Run npm run dev to run development environment.
 - Run npm run build for production build.
+
+## Running the tests
+
+- Run npm run test
