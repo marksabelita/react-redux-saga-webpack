@@ -1,5 +1,5 @@
 {
-  "extends": [ "airbnb", "eslint:recommended" ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "plugins": [
     "react",
     "import"
@@ -21,7 +21,6 @@
     "import/no-unresolved": 0,
     "import/no-named-as-default": 2,
     "comma-dangle": 0,
-    "indent": [2, 2, {"SwitchCase": 1}],
     "no-console": 0,
     "no-alert": 0,
     "linebreak-style": 0,
@@ -34,15 +33,9 @@
     "no-underscore-dangle" : 0,
     "prefer-rest-params": 0,
     "import/prefer-default-export": 0,
-    "react/destructuring-assignment": 0,
-    "react/prop-types": [
-      "enabled",
-      {
-        "ignore": "ignore",
-        "customValidators": "customValidator"
-      }
-    ],
-    "react/destructuring-assignment": ["enabled", "never"]
+    "react/no-unused-prop-types": 0,
+    "no-unused-labels": 0,
+    "no-constant-condition": 0
   },
   "settings": {
     "import/ignore": [
@@ -53,5 +46,6 @@
     "ecmaFeatures": {
       "jsx": true
     }
-  }
+  },
+  "parser": "babel-eslint"
 }
