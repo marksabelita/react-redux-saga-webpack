@@ -1,4 +1,6 @@
 
+![alt text](https://raw.githubusercontent.com/marksabelita/webpack-react-redux-saga/master/src/images/logo.png)
+
 Beginner friendly React-Redux-Saga
 
 ## Key Features
