@@ -19,11 +19,21 @@ This boilerplate features all the latest tools and practices in the industry.
 ## Quick start
 
 - Clone this repo using git clone https://github.com/marksabelita/webpack-react-redux-saga.git
-- Move to the appropriate directory: cd react-redux-boilerplate.
-- Run yarn or npm install to install dependencies.
-- Run npm run dev to run development environment.
-- Run npm run build for production build.
+- Move to the appropriate directory: cd webpack-react-redux-saga.
+- Install dependencies
+```
+npm install
+```
+- Run development environment
+```
+npm run dev to run development environment.
+```
+- Run production build.
+```
+npm run build 
+```
 
 ## Running the tests
-
-- Run npm run test
+```
+Run npm run test
+```
