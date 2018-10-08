@@ -1,6 +1,4 @@
 
-## Features
-
 Beginner friendly React-Redux-Saga
 
 ## Key Features
